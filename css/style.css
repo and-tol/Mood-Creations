@@ -10,9 +10,17 @@ body {
 }
 header {
   background-color: rgba(211, 53, 35, 0.9);
+  height:70px;
 }
 .brand {
   float: left;
+}
+.brand a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #fff;
 }
 .nav {
   float: right;
