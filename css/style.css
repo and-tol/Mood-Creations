@@ -70,6 +70,7 @@ header .brand img {
   background: url("img/red-bg.svg") top center;
   background-color: rgba(211, 53, 35, 0.3);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .promo .wrapper {
   /*margin-top: 100px;*/
