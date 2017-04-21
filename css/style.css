@@ -14,8 +14,6 @@ header {
 }
 .brand {
   float: left;
-}
-.brand a {
   text-decoration: none;
   font-size: 14px;
   line-height: 30px;
