@@ -17,6 +17,9 @@ body, p {
 header {
   background-color: rgba(211, 53, 35, 0.9);
   height:70px;
+  position: fixed;
+  right: 0;
+  left: 0;
 }
 header .brand {
   float: left;
