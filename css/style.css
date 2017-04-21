@@ -63,7 +63,21 @@ header .brand img {
 
 .promo {
   /*width: 1280px;*/
-  background: url("img/red-bg.jpg") top center;
+  padding-top: 50px;
+  background: url("img/red-bg.svg") top center;
   background-color: rgba(211, 53, 35, 0.3);
   background-repeat: no-repeat;
+}
+.promo .wrapper {
+  /*margin-top: 100px;*/
+}
+.wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.promo p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
 }
