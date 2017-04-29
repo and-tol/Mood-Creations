@@ -280,8 +280,7 @@ margin-bottom: 20px;
 
 }
 .our_works-slider-photo {
-  width: 24%;
-  height: 230px;
+  width: 25%;
   float: left;
   position: relative;
 }
@@ -294,8 +293,42 @@ margin-bottom: 20px;
   bottom: 0;
   left: 0;
   background-color: rgba(87, 170, 104, 0.8);
+  text-align: center;
 }
-.our_works-slider-icon{}
+.our_works-slider-icon{
+  display: inline-block;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 35;
+}
+.our_works-slider-icon::before, .our_works-slider-icon::after{
+  display: inline-block;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.our_works-slider-icon::after{
+  display: block;
+  border: 1px solid #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.our_works-slider-name{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.our_works-slider-section{
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
 
 /*--------   style CENRADIS - prices -------*/
 
