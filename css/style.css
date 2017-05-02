@@ -167,6 +167,7 @@ header{
 
 /*------------- style PAKALPOJUMI- services -------------*/
 
+
 .services-container {
   /*height: 600px;*/
   background-color: #d33523;
@@ -218,6 +219,8 @@ margin-bottom: 20px;
 
 /*-------- style MUSU DARBI - our_works -------*/
 
+
+
 .our_works-container {
   background-image: url(../img/bg-green.svg);
   background-repeat: no-repeat;
@@ -249,6 +252,7 @@ margin-bottom: 20px;
   border-radius: 5px;
 }
 .our_works-item:last-child {margin-right: 0;}
+
 .our_works-bottons-container {
   text-align: center;
   padding-top: 31px;
@@ -263,6 +267,7 @@ margin-bottom: 20px;
   margin-right: 15px;
   display: inline-block;
 }
+
 .our_works-botton:last-child {margin-right: 0;}
 .our_works-botton-active{
   background-color: #fff;
@@ -276,52 +281,170 @@ margin-bottom: 20px;
   cursor: pointer;
 }
 
-.our_works-slider-photos-row {
 
-}
 .our_works-slider-photo {
-  width: 24%;
-  height: 230px;
+  width: 25%;
   float: left;
+  position: relative;
 }
-.our_works-slider-photo:last-child {
-
+.our_works-photo{
+  width: 100%;
+  display: block;
+}
+.our_works-slider-content{
+  display: block;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(87, 170, 104, 0.8);
+  text-align: center;
+  padding-top: 35%;
+  opacity: 0;
+}
+.our_works-slider-content:hover {
+  opacity: 1;
 }
 
-/*   style CENRADIS - prices    */
+
+                          /*  icon create with CSS  */
+/*.our_works-slider-icon{
+  display: inline-block;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 35;
+}
+.our_works-slider-icon::before, .our_works-slider-icon::after{
+  display: inline-block;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.our_works-slider-icon::after{
+  display: block;
+  border: 1px solid #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}*/
+
+.our_works-slider-icon{
+  margin-bottom: 35px;
+}
+
+.our_works-slider-name{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.our_works-slider-section{
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*--------   style CENRADIS - prices -------*/
+
+.prices-container {
+  background-image: url(../img/turg-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .prices-title {
   width: 300px;
   height: 50px;
   margin: 10px auto;
 }
-.prices-tabs-container {
-
-}
+.prices-tabs-container {}
 .prices-tabs-items-container {
-  margin: 10px auto;
+  margin: 33px auto 40px;
   text-align: center;
 }
 .prices-tab-item {
-  width: 50px;
-  height: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  margin-right: 60px;
   display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
 }
+.prices-tab-item:last-child{margin-right: 0;}
+
+/* --- price table --- */
+
 .prices-table-container {
-  width: 1100px;
-  margin: 0 auto;
-  height: 200px;
+  background-color: #2a5759;
+  width: 100%;
+  /*padding-bottom: 53px;*/
 }
-.prices-table {
+/*.prices-table {
   width: 100%;
   margin: 0 auto;
   height: 100px;
+}*/
+
+/* --- price table column ---*/
+
+.prices-tabl-column{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+.prices-tabl-column:hover{
+  background-color: #316769;
+}
+.prices-tabl-row{
+  padding:17px;
+  text-align: center;
+  font-weight: 300;
+  color: #a2d5d7;
+  border-bottom:1px solid #437c7e;
+}
+.row-1, .row-price{
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.row-1{padding: 27px}
+
+.row-price{
+  font-size: 32px;
+  line-height: 20px;
+  padding: 25px;
+}
+.row-buttom {
+  border-bottom: none;
+  padding: 40px 0 83px;
+}
+.price-button{
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 13px 38px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.prices-tabl-column:hover .price-button{
+  background-color: #478587;
+  border: 1px solid #71b2b4;
 }
 
-/*   style MūSU KOMANDA komanda    */
 
-.komanda-conteiner {
 
+/*------- style MūSU KOMANDA komanda --------*/
+
+
+.komanda-container {
+  background-color: #57aa68;
 }
 .komanda-title {
   width: 300px;
@@ -338,29 +461,131 @@ margin-bottom: 20px;
 }
 .komanda-slider-bottons-container{
   text-align: center;
-  margin: 10px auto;
+  padding-top: 31px;
+  padding-bottom: 31px
 }
 .komanda-slider-botton {
-  width: 20px;
-  height: 20px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
   border-radius: 50%;
+  opacity: .3;
+  margin-right: 15px;
   display: inline-block;
 }
+.komanda-slider-botton:last-child {margin-right: 0;}
+.komanda-slider-botton-active{
+  background-color: #fff;
+  border: 1px solid transparent;
+  opacity: 1;
+}
+.komanda-slider-botton:hover{
+  background-color: #fff;
+  border: 1px solid transparent;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
 .komanda-slider-photos-container {
 
 }
 .komanda-slider-photo {
-  width: 250px;
-  height: 370px;
+  position: relative;
+  /*width: 250px;
+  height: 370px;*/
   float: left;
   margin-right: 20px;
+  text-align: center;
+  padding-bottom: 70px;
 }
 .komanda-slider-photo:last-child {margin-right: 0;}
+.member{
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+.member-photo-container{
+  position: relative;
+  margin-bottom: 30px;
+}
+.member-photo {
+  display: block;
+  /*width: 260px;*/
+}
+.member-photo-4{}
+.member-name{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.member-position{
+  font-size: 13px;
+  line-height: 24px;
+  opacity: .56;
+}
 
-/*    style SAZINĀTIES communicate     */
+.member-about{
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(87, 170, 104, 0.8);
+  padding: 25px;
+  padding-bottom: 20px;
+  opacity: 0;
+}
+.member-about:hover{opacity: 1;}
+/*.member-about-content{}*/
+.member-about-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.member-about-text{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.member-social-icon-container{
+  /*text-align: center;*/
+  /*position: relative;*/
+}
+.member-social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.member-social-icon-tw{
+  background-image: url(../img/twitter.svg);
+  background-size: 24px;
+}
+.member-social-icon-fb{
+  background-image: url(../img/fb.svg);
+  background-size: auto 24px;
+}
+.member-social-icon-dr{
+  background-image: url(../img/dribbble.svg);
+  background-size: 24px;
+}
+.member-social-icon:last-child{
+  margin-right: 0;
+}
+
+
+/*------- style SAZINĀTIES communicate -------*/
+
 
 .communicate-container {
-  /*height: 720px;*/
+  background-image: url(../img/bg-blue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 45px;
 }
 .communicate-title{
   width: 150px;
@@ -373,9 +598,9 @@ margin-bottom: 20px;
   margin: 10px auto;
 }
 .communicate-address {
-  width: 630px;
-  height: 26px;
-  margin: 10px auto;
+  font-size: 18px;
+  /*margin: 45px auto;*/
+  text-align: center;
 }
 
 /*    style KARTE map     */
