@@ -507,12 +507,13 @@ margin-bottom: 20px;
 }
 .member-photo-container{
   position: relative;
-  margin-bottom: 95px;
+  margin-bottom: 30px;
 }
 .member-photo {
   display: block;
   /*width: 260px;*/
 }
+.member-photo-4{}
 .member-name{
   font-size: 18px;
   margin-bottom: 8px;
@@ -532,10 +533,10 @@ margin-bottom: 20px;
   background-color: rgba(87, 170, 104, 0.8);
   padding: 25px;
   padding-bottom: 20px;
+  opacity: 0;
 }
-.member-about-content{
-
-}
+.member-about:hover{opacity: 1;}
+/*.member-about-content{}*/
 .member-about-title {
   font-size: 18px;
   line-height: 24px;
@@ -558,21 +559,33 @@ margin-bottom: 20px;
   margin-right: 5px;
   background-color: rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
+  background-position: center;
 }
-.member-tw{
+.member-social-icon-tw{
   background-image: url(../img/twitter.svg);
-  
+  background-size: 24px;
+}
+.member-social-icon-fb{
+  background-image: url(../img/fb.svg);
+  background-size: auto 24px;
+}
+.member-social-icon-dr{
+  background-image: url(../img/dribbble.svg);
+  background-size: 24px;
 }
 .member-social-icon:last-child{
   margin-right: 0;
 }
 
 
+/*------- style SAZINĀTIES communicate -------*/
 
-/*    style SAZINĀTIES communicate     */
 
 .communicate-container {
-  /*height: 720px;*/
+  background-image: url(../img/bg-blue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 45px;
 }
 .communicate-title{
   width: 150px;
@@ -585,9 +598,9 @@ margin-bottom: 20px;
   margin: 10px auto;
 }
 .communicate-address {
-  width: 630px;
-  height: 26px;
-  margin: 10px auto;
+  font-size: 18px;
+  /*margin: 45px auto;*/
+  text-align: center;
 }
 
 /*    style KARTE map     */

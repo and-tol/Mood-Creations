@@ -1,0 +1,25 @@
+diff a/css/style.css b/css/style.css	(rejected hunks)
+@@ -276,18 +276,17 @@
+   cursor: pointer;
+ }
+ 
+-.our_works-slider-photos-row {
+-
+-}
+ .our_works-slider-photo {
+   width: 24%;
+   height: 230px;
+   float: left;
+ }
+-.our_works-slider-photo:last-child {
+-
++.our_works-slider-photo{
++  position: relative;
++}
++.our_works-slider-content{
++  background-color: rgba(87, 170, 104, 0.8);
+ }
+-
+ /*   style CENRADIS - prices    */
+ 
+ .prices-title {
