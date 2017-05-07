@@ -619,6 +619,8 @@ margin-bottom: 20px;
 }
 .communicate-form textarea{
   height: 230px;
+  color:rgba(255, 255, 255, 0.7) !important;
+  resize: none;
 }
 input[type="submit"]{
   text-transform: uppercase;
@@ -638,9 +640,7 @@ input::placeholder{
   color:#fff;
   opacity: 0.7;
 }
-textarea {
-  color:rgba(255, 255, 255, 0.7) !important;
-}
+
 input[type="text"]:hover, input[type="email"]:hover{
   border: 2px solid rgba(255, 246, 196, .7);
 
@@ -648,11 +648,15 @@ input[type="text"]:hover, input[type="email"]:hover{
 
 
 
-/*    style KARTE map     */
+/*--------     style KARTE map --------------*/
 
 .map-container {
-  height: 600px;
+  /*height: 600px;*/
   padding:0;
+}
+#map {
+  width: 100%;
+  height: 600px;
 }
 
 /*    style KĀJENE footer     */

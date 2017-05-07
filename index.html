@@ -334,9 +334,9 @@
       <h3 class="title">Sazināties</h3>
       <form action="post" method="" name="communicate" class="communicate-form">
         <input type="text" name="name" placeholder="Vārds Uzvārds" />
-        <br />
+
         <input type="email" name="email" placeholder="E-pasts" required />
-        <br />
+
         <textarea name="qu">Tavs jautājms
         </textarea>
         <input type="submit" value="sūtit ziņu" />
@@ -345,8 +345,14 @@
     </section>
 
     <section class="map-container">
-      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+      <div id="map" class="map"></div>
+
+
+
+      <!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
       <div style='overflow:hidden;height:600px;width:100%;'>
+
         <div id='gmap_canvas' style='height:600px;width:100%;'></div>
         <div>
           <small>
@@ -358,7 +364,7 @@
         <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
           </div>
         <script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(56.9496487,24.10518639999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.9496487,24.10518639999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Mood Creations</strong><br>Riga, Latvia, Valdemara 1 <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-      </script>
+      </script> -->
     </section>
 
     <footer>
@@ -366,5 +372,8 @@
     </footer>
 
   </div>
+
 </body>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/google_map.js"></script>
 </html>
