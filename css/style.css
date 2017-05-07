@@ -15,18 +15,25 @@
 .right{
   float: right;
 }
-body, p, h1, h2, h3{
+body, p, h1, h2, h3, input, textarea{
   font-family: 'Roboto', sans-serif;
   color: white;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none;
   color: white;
+  outline: none;
 }
 a:hover{
   text-decoration: none;
+}
+
+input, textarea{
+  border: none;
+  box-sizing: border-box;
+  outline: none;
 }
 
 /*.main-container {
@@ -355,7 +362,7 @@ margin-bottom: 20px;
 /*--------   style CENRADIS - prices -------*/
 
 .prices-container {
-  background-image: url(../img/turg-bg.svg);
+  background-image: url(../img/bg-turg.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -596,19 +603,56 @@ margin-bottom: 20px;
 }
 .communicate-form {
   width: 630px;
-  height: 400px;
-  margin: 10px auto;
+  margin: 0 auto;
+}
+.communicate-form input, .communicate-form textarea{
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(46, 45, 107, 0.7);
+  color: #fff;
+  padding: 14px 0 14px 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.communicate-form input{
+  height: 40px;
+}
+.communicate-form textarea{
+  height: 230px;
+}
+input[type="submit"]{
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
 }
 .communicate-address {
   font-size: 18px;
-  /*margin: 45px auto;*/
+  margin: 45px auto 75px;
   text-align: center;
 }
+input::placeholder{
+  color:#fff;
+  opacity: 0.7;
+}
+textarea {
+  color:rgba(255, 255, 255, 0.7) !important;
+}
+input[type="text"]:hover, input[type="email"]:hover{
+  border: 2px solid rgba(255, 246, 196, .7);
+
+}
+
+
 
 /*    style KARTE map     */
 
 .map-container {
   height: 600px;
+  padding:0;
 }
 
 /*    style KĀJENE footer     */
