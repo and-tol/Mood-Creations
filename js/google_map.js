@@ -32,7 +32,7 @@ function init() {
     position: new google.maps.LatLng(56.952048, 24.120586),
     map: map,
     title: 'Mood Creations',
-    icon: "",
+    icon: "img/map-icon-yellow.svg",
   });
 
 // включение скрола после клика на карту
@@ -56,5 +56,11 @@ map.addListener('mouseout', function() {
 	});
 });
 
+// map center on resize
+var getCen = map.getCenter();
+
+google.maps.event.addDomListener(window, 'resize', function() {
+	map.setCenter(getCen);
+});
 
 }
