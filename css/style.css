@@ -36,21 +36,8 @@ input, textarea{
   border: none;
   outline: none;
 }
-button{
-  display: inline-block;
-  border: none;
-  text-decoration: none;
-  text-align: center;
-  padding:0;
-  background-color: transparent;
-  outline: none;
-}
 
-/*.main-container {
-/*width: 1100px;*/
-/*height: 500px;*/
-/*margin: 0 auto;*/
-/*}*/
+
 .wrapper{
   max-width: 1100px;
   margin: 0 auto;
@@ -78,6 +65,20 @@ section .title{
 }
 
 /*button style*/
+button{
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding:0;
+  background-color: transparent;
+  outline: none;
+}
+.buttons {
+  margin: 33px auto 40px;
+  text-align: center;
+}
+/* прямоугольные кнопки */
 .btn-rect {
   font-size: 13px;
   text-transform: uppercase;
@@ -89,15 +90,25 @@ section .title{
   color: #fff;
 }
 
-.btn:hover{
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
+.btn:hover{ /* плавное изменение видимости конопок */
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
 }
 .btn-rect:hover{
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.btn-rect:active{
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, .1);
 }
 .btn:last-child {margin-right: 0;}
 
+/* круглые кнопки */
+.bottons-round {
+  text-align: center;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
 .btn-round {
   width: 8px;
   height: 8px;
@@ -107,9 +118,7 @@ section .title{
   margin-right: 15px;
   display: inline-block;
 }
-
-
-.btn-round-active{
+.btn-round:active{
   background-color: #fff;
   border: 1px solid transparent;
   opacity: 1;
@@ -120,6 +129,15 @@ section .title{
   opacity: 1;
   cursor: pointer;
 }
+
+/*--- style background with picture --- */
+.bg-pict{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 
 /*============ style navigation
 */
@@ -156,7 +174,8 @@ header{
   border-top: 5px solid rgba(255, 255, 255, 0.6);
 }
 
-/*-----------style slider-------------*/
+/* ==============style slider
+*/
 
 .slider {
   background-image: url(../img/bg-red.jpg);
@@ -263,29 +282,19 @@ header{
 }
 
 
-/*======= style MUSU DARBI - our_works */
+/*======= style MUSU DARBI - our_works
+ */
 
-
-
-.bg-green-pict {
+.our_works {
   background-image: url(../img/bg-green.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.buttons {
-  margin: 33px auto 40px;
-  text-align: center;
-}
+
 .works-buttons{margin-bottom: 0;}
 
-.our_works-bottons-container {
-  text-align: center;
-  padding-top: 31px;
-  padding-bottom: 31px;
-}
 
-.our_works-slider-photo {
+
+.slider-photos {
   width: 25%;
   float: left;
   position: relative;
@@ -295,7 +304,7 @@ header{
   width: 100%;
   display: block;
 }
-.our_works-slider-content{
+.our_works-slider-icon{
   display: inline-block;
   position: absolute;
   top:0;
@@ -308,37 +317,19 @@ header{
   opacity: 0;
   margin: auto;
 }
-.our_works-slider-content:hover {
+.our_works-slider-icon:hover {
   opacity: 1;
 }
-
-
-/* ----- icon create with CSS  */
-/*.our_works-slider-icon{
-display: inline-block;
-border: 1px solid #fff;
-height: 40px;
-width: 40px;
-border-radius: 50%;
-margin-bottom: 35;
-}
-.our_works-slider-icon::before, .our_works-slider-icon::after{
-display: inline-block;
-border: 1px solid #fff;
-height: 30px;
-width: 30px;
-border-radius: 50%;
-}
-.our_works-slider-icon::after{
-display: block;
-border: 1px solid #fff;
-height: 20px;
-width: 20px;
-border-radius: 50%;
-}*/
-
-.our_works-slider-icon{
+.slider-icon{
   margin-bottom: 35px;
+}
+.slider-icon{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/slider-pict/skatit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .our_works-slider-name{
   font-size: 18px;
@@ -355,23 +346,19 @@ border-radius: 50%;
 
 /*======= style CENRADIS - prices */
 
-.prices-container {
+.prices {
   background-image: url(../img/bg-turg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .prices-title {
   width: 300px;
   height: 50px;
   margin: 10px auto;
 }
-.prices-tabs-container {
 
-}
-.prices-tabs-items-container {
+/*.prices-tabs-items-container {
   margin: 33px auto 40px;
   text-align: center;
-}
+}*/
 
   /* --- price table --- */
 
@@ -454,20 +441,15 @@ td:hover::after{
   /*====== style MūSU KOMANDA komanda */
 
 
-  .komanda-container {
+  .bg-green {
     background-color: #57aa68;
   }
-  .komanda-title {
-    width: 300px;
-    height: 50px;
-    margin: 10px auto;
+
+  .komanda p {
+    max-width: 950px;
+    margin: 0 auto;
   }
-  .komanda-text {
-    width: 950px;
-    height: 150px;
-    margin: 10px auto;
-  }
-  .komanda-slider-container {  }
+
   .komanda-slider-bottons-container{
     text-align: center;
     padding-top: 31px;
@@ -494,7 +476,7 @@ td:hover::after{
     opacity: 1;
     cursor: pointer;
   }
-  .komanda-slider-photos-container {
+  .komanda-slider-photos {
     padding-bottom: 70px;
   }
   .komanda-slider-photo {
@@ -581,12 +563,10 @@ td:hover::after{
   /*======= style SAZINĀTIES communicate  */
 
 
-  .communicate-container {
+  .bg-blue-pict {
     background-image: url(../img/bg-blue.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 45px;
   }
+  .communicate{padding-bottom: 45px;}
   .communicate-title{
     width: 150px;
     height: 50px;
@@ -686,8 +666,10 @@ td:hover::after{
 
   footer {
     height: 80px;
-    background-color: #2e2d6b;
     text-align: center;
+  }
+  .bg-blue{
+    background-color: #2e2d6b;
   }
   .copyright {
     padding-top: 30px;
