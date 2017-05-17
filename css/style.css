@@ -184,15 +184,13 @@ header{
   padding-top: 167px;
 
 }
-.slider-page{
-  position: relative;
-  margin: 0 auto 0;
-}
+
 .slider-main {
   text-align: center;
   margin: 0 auto 50px;
 }
-.slider-secondary {
+
+.promo-logo, .slider-secondary {
   width: 920px;
   margin: 0 auto;
 }
@@ -206,11 +204,11 @@ header{
   display: inline-block;
   margin-right: 20px;
 }
-.slider-icon{
+.social-icon{
   height: 30px;
   opacity: .5;
 }
-.icon-be{height: 27px}
+.icon-be{height: 28px}
 .slider-icon:hover{opacity: .9}
 
 .slider-buttons-container {
@@ -289,22 +287,17 @@ header{
   background-image: url(../img/bg-green.svg);
 }
 
-
 .works-buttons{margin-bottom: 0;}
-
-
-
 .slider-photos {
   width: 25%;
   float: left;
   position: relative;
-
 }
 .our_works-photo{
   width: 100%;
   display: block;
 }
-.our_works-slider-icon{
+.slider-content{
   display: inline-block;
   position: absolute;
   top:0;
@@ -325,8 +318,8 @@ header{
 }
 .slider-icon{
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-image: url("../img/slider-pict/skatit.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -344,7 +337,8 @@ header{
   text-align: center;
 }
 
-/*======= style CENRADIS - prices */
+/*======= style CENRADIS - prices
+*/
 
 .prices {
   background-image: url(../img/bg-turg.svg);
@@ -397,7 +391,7 @@ thead td{
   border-bottom: 1px solid rgba(67, 124, 126, 1);
   padding: 40px 0 30px;
 }
-.row-price {
+.row-price>td {
   color: #fff;
   font-weight: 400;
   font-size: 20px;
@@ -405,7 +399,8 @@ thead td{
   line-height: 20px;
   padding: 25px 0;
 }
-.row-buttom {
+
+.row-buttom>td {
   border-bottom: none;
   padding: 40px 0 80px;
 }
@@ -418,27 +413,36 @@ thead td{
   border-radius: 4px;
   color:#fff;
 }
-
 .col1:hover .price-button{
   background-color: #478587;
   border: 1px solid #71b2b4;
 }
-
-  /* table column hover effect */
-
-td:hover::after{
-  content: '';
-  width: 25%; /* ширина псевдоэлемента после наведения */
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;/* растягиваем псевдоэлемент по вертикали */
-  background-color: #316769; /* фоновый цвет псевдоэлемента */
-  /*z-index: -1;*/
+.price-button:hover{
+  background-color: #478587;
+  border: 1px solid #71b2b4;
+}
+.price-button:active{
+  background-color: rgba(71,133,135, .2);
+  border: 1px solid transparent;
 }
 
 
-  /*====== style MūSU KOMANDA komanda */
+  /* table column hover effect */
+
+/*td:hover::after{*/
+  /*content: '';*/
+  /*width: 25%; /* ширина псевдоэлемента после наведения */
+  /*display: block;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bottom: 0;/* растягиваем псевдоэлемент по вертикали */
+  /*background-color: #316769; /* фоновый цвет псевдоэлемента */
+  /*z-index: -1;*/
+/*}*/
+
+
+  /*====== style MūSU KOMANDA komanda
+  */
 
 
   .bg-green {
@@ -450,32 +454,7 @@ td:hover::after{
     margin: 0 auto;
   }
 
-  .komanda-slider-bottons-container{
-    text-align: center;
-    padding-top: 31px;
-    padding-bottom: 31px
-  }
-  .komanda-slider-botton {
-    width: 8px;
-    height: 8px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    opacity: .3;
-    margin-right: 15px;
-    display: inline-block;
-  }
-  .komanda-slider-botton:last-child {margin-right: 0;}
-  .komanda-slider-botton-active{
-    background-color: #fff;
-    border: 1px solid transparent;
-    opacity: 1;
-  }
-  .komanda-slider-botton:hover{
-    background-color: #fff;
-    border: 1px solid transparent;
-    opacity: 1;
-    cursor: pointer;
-  }
+
   .komanda-slider-photos {
     padding-bottom: 70px;
   }
@@ -533,7 +512,7 @@ td:hover::after{
     font-weight: 300;
     margin-bottom: 50px;
   }
-  .member-social-icon-container{    }
+
   .member-social-icon {
     display: inline-block;
     width: 40px;
@@ -560,18 +539,15 @@ td:hover::after{
   }
 
 
-  /*======= style SAZINĀTIES communicate  */
-
+  /*======= style SAZINĀTIES communicate
+  */
 
   .bg-blue-pict {
     background-image: url(../img/bg-blue.svg);
   }
   .communicate{padding-bottom: 45px;}
-  .communicate-title{
-    width: 150px;
-    height: 50px;
-    margin: 10px auto;
-  }
+
+/* ----- form style ----- */
   .communicate-form {
     width: 630px;
     margin: 0 auto;
@@ -593,6 +569,7 @@ td:hover::after{
     color:rgba(255, 255, 255, 0.7) !important;
     resize: none;
   }
+  /* кнопка формы */
   input[type="submit"]{
     text-transform: uppercase;
     font-size: 16px;
@@ -602,18 +579,33 @@ td:hover::after{
     cursor: pointer;
     padding: 0;
   }
-  .communicate-address {
-    font-size: 18px;
-    margin: 45px auto 75px;
-    text-align: center;
+  input[type="submit"]:hover{
+    background-color: rgba(46,45,107,.6);
+    border: 1px solid rgb(113,112,196);
   }
+  input[type="submit"]:active{
+    background-color: rgba(46,45,107,.6);
+    border: 1px solid transparent;
+  }
+
+
+/* --- placeholder styling --- */
   input::placeholder{
     color:#fff;
     opacity: 0.7;
   }
-  input[type="text"]:hover, input[type="email"]:hover{
+
+
+  input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
     border: 2px solid rgba(255, 246, 196, .7);
+    padding-left: 13px;
   }
+  textarea:hover{padding-top: 12px;}
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border: 2px solid rgba(255, 246, 196, .2);
+  }
+
+/* ошибка ввода информации в форму */
   label.input-name{
     position: relative;
   }
@@ -650,6 +642,11 @@ td:hover::after{
     top:14px;
   }
 
+  .communicate-address {
+    font-size: 18px;
+    margin: 45px auto 75px;
+    text-align: center;
+  }
 
   /*=======   style KARTE map */
 
