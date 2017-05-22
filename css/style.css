@@ -575,6 +575,7 @@ thead td{
     height: 230px;
     color:rgba(255, 255, 255, 0.7) !important;
     resize: none;
+    overflow: hidden;
   }
   /* кнопка формы */
   input[type="submit"]{
