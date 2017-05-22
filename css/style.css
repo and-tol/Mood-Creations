@@ -208,8 +208,15 @@ header{
   height: 30px;
   opacity: .5;
 }
-.icon-be{height: 28px}
-.slider-icon:hover{opacity: .9}
+.social-icon:hover{
+  opacity: .8;
+}
+.icon-be{
+  height: 28px
+}
+.slider-icon:hover{
+  opacity: .9
+}
 
 .slider-buttons-container {
   position: absolute;
