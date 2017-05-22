@@ -134,6 +134,7 @@ button{
 .bg-pict{
   background-repeat: no-repeat;
   background-size: cover;
+  /*width: 100%;*/
 }
 
 
@@ -179,10 +180,7 @@ header{
 
 .slider {
   background-image: url(../img/bg-red.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 167px;
-
 }
 
 .slider-main {
@@ -244,7 +242,8 @@ header{
   cursor: pointer;
 }
 
-/*====== style PAKALPOJUMI- services */
+/*====== style PAKALPOJUMI- services
+*/
 
 
 .bg-red {
@@ -262,7 +261,9 @@ header{
   text-align: center;
   margin-right: 43px;
 }
-.services-block:last-child{margin-right:0;}
+.services-block:last-child{
+  margin-right:0;
+}
 
 .services-block img{
   width: 88px;
@@ -288,13 +289,16 @@ header{
 
 
 /*======= style MUSU DARBI - our_works
- */
+*/
 
 .our_works {
-  background-image: url(../img/bg-green.svg);
+  background-image: url(../img/bg-green.png);
+
 }
 
-.works-buttons{margin-bottom: 0;}
+.works-buttons{
+  margin-bottom: 0;
+}
 .slider-photos {
   width: 25%;
   float: left;
@@ -317,9 +321,10 @@ header{
   opacity: 0;
   margin: auto;
 }
-.our_works-slider-icon:hover {
+.slider-photos:hover .slider-content{
   opacity: 1;
 }
+
 .slider-icon{
   margin-bottom: 35px;
 }
@@ -348,7 +353,8 @@ header{
 */
 
 .prices {
-  background-image: url(../img/bg-turg.svg);
+  background-image: url(../img/bg-turg.png);
+  background-position:right bottom;
 }
 .prices-title {
   width: 300px;
@@ -357,11 +363,11 @@ header{
 }
 
 /*.prices-tabs-items-container {
-  margin: 33px auto 40px;
-  text-align: center;
+margin: 33px auto 40px;
+text-align: center;
 }*/
 
-  /* --- price table --- */
+/* --- price table --- */
 
 .prices-table {
   background-color: #2a5759;
@@ -434,310 +440,315 @@ thead td{
 }
 
 
-  /* table column hover effect */
+/* table column hover effect */
 
 /*td:hover::after{*/
-  /*content: '';*/
-  /*width: 25%; /* ширина псевдоэлемента после наведения */
-  /*display: block;*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*bottom: 0;/* растягиваем псевдоэлемент по вертикали */
-  /*background-color: #316769; /* фоновый цвет псевдоэлемента */
-  /*z-index: -1;*/
+/*content: '';*/
+/*width: 25%; /* ширина псевдоэлемента после наведения */
+/*display: block;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*bottom: 0;/* растягиваем псевдоэлемент по вертикали */
+/*background-color: #316769; /* фоновый цвет псевдоэлемента */
+/*z-index: -1;*/
 /*}*/
 
 
-  /*====== style MūSU KOMANDA komanda
-  */
+/*====== style MūSU KOMANDA komanda
+*/
 
 
-  .bg-green {
-    background-color: #57aa68;
-  }
+.bg-green {
+  background-color: #57aa68;
+}
 
-  .komanda p {
-    max-width: 950px;
-    margin: 0 auto;
-  }
+.komanda p {
+  max-width: 950px;
+  margin: 0 auto;
+}
 
 
-  .komanda-slider-photos {
-    padding-bottom: 70px;
-  }
-  .komanda-slider-photo {
-    position: relative;
-    float: left;
-    margin-right: 20px;
-    text-align: center;
-  }
-  .komanda-slider-photo:last-child {margin-right: 0;}
-  .member{
-    font-weight: 400;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .member-photo-container{
-    position: relative;
-    margin-bottom: 30px;
-  }
-  .member-photo {display: block;}
-  .member-photo-4{
-  }
-  .member-name{
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  .member-position{
-    font-size: 13px;
-    line-height: 24px;
-    opacity: .56;
-  }
-  .member-about{
-    position: absolute;
-    top:0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(87, 170, 104, 0.8);
-    padding: 25px;
-    padding-bottom: 20px;
-    visibility: hidden;
-  }
-  .komanda-slider-photo:hover .member-about{
+.komanda-slider-photos {
+  padding-bottom: 70px;
+}
+.komanda-slider-photo {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.komanda-slider-photo:last-child {
+  margin-right: 0;
+}
+.member{
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+.member-photo-container{
+  position: relative;
+  margin-bottom: 30px;
+}
+.member-photo {display: block;}
+.member-photo-4{
+}
+.member-name{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.member-position{
+  font-size: 13px;
+  line-height: 24px;
+  opacity: .56;
+}
+.member-about{
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(87, 170, 104, 0.8);
+  padding: 25px;
+  padding-bottom: 20px;
+  visibility: hidden;
+}
+.slider-photo:hover .member-about{
   visibility: visible;
-  }
+}
 
-  .member-about-title {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 10px;
-  }
-  .member-about-text{
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 300;
-    margin-bottom: 50px;
-  }
+.member-about-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.member-about-text{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
 
-  .member-social-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .member-social-icon-tw{
-    background-image: url(../img/twitter.svg);
-    background-size: 24px;
-  }
-  .member-social-icon-fb{
-    background-image: url(../img/fb.svg);
-    background-size: auto 24px;
-  }
-  .member-social-icon-dr{
-    background-image: url(../img/dribbble.svg);
-    background-size: 24px;
-  }
-  .member-social-icon:last-child{
-    margin-right: 0;
-  }
+.member-social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.member-social-icon-tw{
+  background-image: url(../img/twitter.svg);
+  background-size: 24px;
+}
+.member-social-icon-fb{
+  background-image: url(../img/fb.svg);
+  background-size: auto 24px;
+}
+.member-social-icon-dr{
+  background-image: url(../img/dribbble.svg);
+  background-size: 24px;
+}
+.member-social-icon:last-child{
+  margin-right: 0;
+}
 
 
-  /*======= style SAZINĀTIES communicate
-  */
+/*======= style SAZINĀTIES communicate
+*/
 
-  .bg-blue-pict {
-    background-image: url(../img/bg-blue.svg);
-  }
-  .communicate{padding-bottom: 45px;}
+.bg-blue-pict {
+  background-image: url(../img/bg-blue.png);
+}
+.communicate{
+  padding-bottom: 45px;
+}
 
 /* ----- form style ----- */
-  .communicate-form {
-    width: 630px;
-    margin: 0 auto;
-  }
-  .communicate-form input, .communicate-form textarea{
-    width: 100%;
-    border-radius: 4px;
-    background-color: rgba(46, 45, 107, 0.7);
-    color: #fff;
-    padding: 14px 0 14px 15px;
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-  .communicate-form input{
-    height: 40px;
-  }
-  .communicate-form textarea{
-    height: 230px;
-    color:rgba(255, 255, 255, 0.7) !important;
-    resize: none;
-    overflow: hidden;
-  }
-  /* кнопка формы */
-  input[type="submit"]{
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 40px;
-    border: 1px solid #fff;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-  }
-  input[type="submit"]:hover{
-    background-color: rgba(46,45,107,.6);
-    border: 1px solid rgb(113,112,196);
-  }
-  input[type="submit"]:active{
-    background-color: rgba(46,45,107,.6);
-    border: 1px solid transparent;
-  }
+.communicate-form {
+  width: 630px;
+  margin: 0 auto;
+}
+.communicate-form input, .communicate-form textarea{
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(46, 45, 107, 0.7);
+  color: #fff;
+  padding: 14px 0 14px 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.communicate-form input{
+  height: 40px;
+}
+.communicate-form textarea{
+  height: 230px;
+  color:rgba(255, 255, 255, 0.7) !important;
+  resize: none;
+  overflow: auto;
+}
+
+/* кнопка формы */
+input[type="submit"]{
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+input[type="submit"]:hover{
+  background-color: rgba(46,45,107,.6);
+  border: 1px solid rgb(113,112,196);
+}
+input[type="submit"]:active{
+  background-color: rgba(46,45,107,.6);
+  border: 1px solid transparent;
+}
 
 
 /* --- placeholder styling --- */
-  input::placeholder{
-    color:#fff;
-    opacity: 0.7;
-  }
+input::placeholder{
+  color:#fff;
+  opacity: 0.7;
+}
 
 
-  input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
-    border: 2px solid rgba(255, 246, 196, .7);
-    padding-left: 13px;
-  }
-  textarea:hover{padding-top: 12px;}
-  input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
-    border: 2px solid rgba(255, 246, 196, .2);
-  }
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+  border: 2px solid rgba(255, 246, 196, .7);
+  padding-left: 13px;
+}
+textarea:hover{padding-top: 12px;}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+  border: 2px solid rgba(255, 246, 196, .2);
+}
 
 /* ошибка ввода информации в форму */
-  label.input-name{
-    position: relative;
-  }
-  .input-title-container{
-    position: absolute;
-    top:-8px;
-    right: -169px;
-    visibility: hidden;
-  }
-  .input-name:hover .input-title-container{
-    visibility: visible;
-  }
-  .input-title {
-    position: relative;
-    color:#fe0000;
-    font-size: 13px;
-    width: 150px;
-    height: 38px;
-    background-color: #fff6c4;
-    text-align: center;
-    font-weight: 400;
-    vertical-align: middle;
-    padding-top: 12px;
-    border-radius: 5px;
-  }
-  .input-title::before{
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border:6px solid transparent;
-    border-right: 6px solid #fff6c4;
-    left:-11px;
-    top:14px;
-  }
+label.input-name{
+  position: relative;
+}
+.input-title-container{
+  position: absolute;
+  top:-8px;
+  right: -169px;
+  visibility: hidden;
+}
+.input-name:hover .input-title-container{
+  visibility: visible;
+}
+.input-title {
+  position: relative;
+  color:#fe0000;
+  font-size: 13px;
+  width: 150px;
+  height: 38px;
+  background-color: #fff6c4;
+  text-align: center;
+  font-weight: 400;
+  vertical-align: middle;
+  padding-top: 12px;
+  border-radius: 5px;
+}
+.input-title::before{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border:6px solid transparent;
+  border-right: 6px solid #fff6c4;
+  left:-11px;
+  top:14px;
+}
 
-  .communicate-address {
-    font-size: 18px;
-    margin: 45px auto 75px;
-    text-align: center;
-  }
+.communicate-address {
+  font-size: 18px;
+  margin: 45px auto 75px;
+  text-align: center;
+}
 
-  /*=======   style KARTE map */
+/*=======   style KARTE map */
 
-  .map-container {
-    /*height: 600px;*/
-    padding:0;
-  }
-  #map {
-    width: 100%;
-    height: 600px;
-  }
+.map-container {
+  /*height: 600px;*/
+  padding:0;
+}
+#map {
+  width: 100%;
+  height: 600px;
+}
 
-  /* =======    style KĀJENE footer     */
+/* =======    style KĀJENE footer     */
 
-  footer {
-    height: 80px;
-    text-align: center;
-  }
-  .bg-blue{
-    background-color: #2e2d6b;
-  }
-  .copyright {
-    padding-top: 30px;
-    font-size: 13px;
-    opacity: .5;
-    vertical-align: middle;
-  }
+footer {
+  height: 80px;
+  text-align: center;
+}
+.bg-blue{
+  background-color: #2e2d6b;
+}
+.copyright {
+  padding-top: 30px;
+  font-size: 13px;
+  opacity: .5;
+  vertical-align: middle;
+}
 
-  /*======================================
-  Системное оформление - не изменять
-  =======================================*/
+/*======================================
+Системное оформление - не изменять
+=======================================*/
 
-  .g00 {
-    background-color: lightgray;
-    border: 4px solid coral;
-  }
+.g00 {
+  background-color: lightgray;
+  border: 4px solid coral;
+}
 
-  .gl0, .gl1, .gl2, .gl3, .gl4, .gl5, .gl6, .gl7, .gl8 {
-    position: relative;
-  }
+.gl0, .gl1, .gl2, .gl3, .gl4, .gl5, .gl6, .gl7, .gl8 {
+  position: relative;
+}
 
-  .gl0 {
-    border: 1px solid rgba(255, 127, 80, .1);
-    box-shadow: inset 0 0 0 2px coral;
-    background: rgba(255, 127, 80, .1);
-  }
+.gl0 {
+  border: 1px solid rgba(255, 127, 80, .1);
+  box-shadow: inset 0 0 0 2px coral;
+  background: rgba(255, 127, 80, .1);
+}
 
-  .gl1 {
-    border: 1px solid rgba(87, 183, 85, .1);
-    box-shadow: 0 0 0 2px green;
-    background: rgba(87, 183, 85, .1);
-  }
+.gl1 {
+  border: 1px solid rgba(87, 183, 85, .1);
+  box-shadow: 0 0 0 2px green;
+  background: rgba(87, 183, 85, .1);
+}
 
-  .gl2 {
-    border: 1px solid rgba(255, 45, 82, .1);
-    box-shadow: 0 0 0 2px rgb(255, 45, 82);
-    background: rgba(255, 45, 82, .1);
-  }
+.gl2 {
+  border: 1px solid rgba(255, 45, 82, .1);
+  box-shadow: 0 0 0 2px rgb(255, 45, 82);
+  background: rgba(255, 45, 82, .1);
+}
 
-  .gl3 {
-    border: 1px solid rgba(43, 46, 144, .1);
-    box-shadow: 0 0 0 2px rgb(220, 136, 221);
-    background: rgba(43, 46, 144, .2);
-  }
+.gl3 {
+  border: 1px solid rgba(43, 46, 144, .1);
+  box-shadow: 0 0 0 2px rgb(220, 136, 221);
+  background: rgba(43, 46, 144, .2);
+}
 
-  .gl4 {
-    border: 1px solid rgba(94, 46, 144, .1);
-    box-shadow: 0 0 0 2px rgb(94, 46, 144);
-    background: rgba(94, 46, 144, .2);
-  }
+.gl4 {
+  border: 1px solid rgba(94, 46, 144, .1);
+  box-shadow: 0 0 0 2px rgb(94, 46, 144);
+  background: rgba(94, 46, 144, .2);
+}
 
-  .gl5 {
-    border: 1px solid rgba(28, 219, 227, .1);
-    box-shadow: 0 0 0 2px rgb(28, 219, 227);
-    background: rgba(28, 219, 227, .2);
-  }
-  .gl6 {
-    border: 1px solid rgba(144, 94, 46, .1);
-    box-shadow: 0 0 0 2px rgba(144, 94, 46, 0.6);
-    background: rgba(144, 94, 46, .2);
-  }
-  .gl7 {
-    border: 1px solid rgba(144, 143, 46, .1);
-    box-shadow: 0 0 0 2px rgba(144, 143, 46, 0.6);
-    background: rgba(144, 143, 46, .2);
-  }
+.gl5 {
+  border: 1px solid rgba(28, 219, 227, .1);
+  box-shadow: 0 0 0 2px rgb(28, 219, 227);
+  background: rgba(28, 219, 227, .2);
+}
+.gl6 {
+  border: 1px solid rgba(144, 94, 46, .1);
+  box-shadow: 0 0 0 2px rgba(144, 94, 46, 0.6);
+  background: rgba(144, 94, 46, .2);
+}
+.gl7 {
+  border: 1px solid rgba(144, 143, 46, .1);
+  box-shadow: 0 0 0 2px rgba(144, 143, 46, 0.6);
+  background: rgba(144, 143, 46, .2);
+}
