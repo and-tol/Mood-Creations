@@ -4,8 +4,9 @@
 /* "Clearfix" */
 .cf:before,
 .cf:after{
-  content: "";
   display: table;
+
+  content: "";
 }
 .cf:after{
   clear: both;
@@ -19,60 +20,68 @@
   float: right;
 }
 body, p, h1, h2, h3, input, textarea{
-  font-family: 'Roboto', sans-serif;
-  color: white;
   margin: 0;
   padding: 0;
+  color: white;
+
+  font-family: 'Roboto', sans-serif;
 }
 a{
-  text-decoration: none;
-  color: white;
   outline: none;
+  color: white;
+
+  text-decoration: none;
 }
 a:hover{
   text-decoration: none;
 }
-input, textarea{
-  border: none;
+input,
+textarea{
   outline: none;
+
+  border: none;
 }
 
 
 .wrapper{
-  max-width: 1100px;
   margin: 0 auto;
+
+  max-width: 1100px;
 }
 section{
-  padding-top: 110px;
   overflow: auto;
+
+  padding-top: 110px;
 }
 section p {
-  margin-left: auto;
   margin-right: auto;
+
+  margin-left: auto;
   width: 920px;
-  font-size: 20px;
-  line-height: 1.6;
   text-align: center;
   font-weight: 300;
+  font-size: 20px;
+  line-height: 1.6;
 }
 section .title{
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
   margin-bottom: 60px;
+
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 /*button style*/
 button{
   display: inline-block;
-  border: none;
-  text-decoration: none;
-  text-align: center;
   padding:0;
-  background-color: transparent;
   outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
 }
 .buttons {
   margin: 33px auto 40px;
@@ -80,14 +89,15 @@ button{
 }
 /* прямоугольные кнопки */
 .btn-rect {
-  font-size: 13px;
-  text-transform: uppercase;
-  padding: 11px 14px 9px;
-  margin-right: 60px;
   display: inline-block;
+  margin-right: 60px;
+  padding: 11px 14px 9px;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
   color: #fff;
+  text-transform: uppercase;
+
+  font-size: 13px;
 }
 
 .btn:hover{ /* плавное изменение видимости конопок */
@@ -105,35 +115,40 @@ button{
 
 /* круглые кнопки */
 .bottons-round {
-  text-align: center;
   padding-top: 31px;
   padding-bottom: 31px;
+
+  text-align: center;
 }
 .btn-round {
+  display: inline-block;
+  margin-right: 15px;
+
   width: 8px;
   height: 8px;
   border: 1px solid #fff;
   border-radius: 50%;
   opacity: .3;
-  margin-right: 15px;
-  display: inline-block;
 }
 .btn-round:active{
-  background-color: #fff;
   border: 1px solid transparent;
+
+  background-color: #fff;
   opacity: 1;
 }
 .btn-round:hover{
-  background-color: #fff;
   border: 1px solid transparent;
+
+  background-color: #fff;
   opacity: 1;
   cursor: pointer;
 }
 
 /*--- style background with picture --- */
 .bg-pict{
-  background-repeat: no-repeat;
   background-size: cover;
+
+  background-repeat: no-repeat;
   /*width: 100%;*/
 }
 
@@ -145,21 +160,23 @@ button{
 
 /* --- style brand ---*/
 header{
-  background-color: rgba(211, 53, 35, 0.9);
-  height: 70px;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 10;
-  font-size: 14px;
+  height: 70px;
+
+  background-color: rgba(211, 53, 35, 0.9);
   font-weight: 300;
+  font-size: 14px;
 }
 .brand{
   margin-top: 8px;
 }
 .brand img {
-  vertical-align: middle;
   margin-right: 8px;
+
+  vertical-align: middle;
 }
 
 /*--- style menu ---*/
@@ -171,31 +188,35 @@ header{
   line-height: 70px;
 }
 .nav-item:hover{
-  line-height: 60px;
   border-top: 5px solid rgba(255, 255, 255, 0.6);
+
+  line-height: 60px;
 }
 
 /* ==============style slider
 */
 
 .slider {
-  background-image: url(../img/bg-red.jpg);
   padding-top: 167px;
+
+  background-image: url(../img/bg-red.jpg);
 }
 
 .slider-main {
-  text-align: center;
   margin: 0 auto 50px;
+
+  text-align: center;
 }
 
 .promo-logo, .slider-secondary {
-  width: 920px;
   margin: 0 auto;
+
+  width: 920px;
 }
 .slider-third {
   margin-top: 37px;
-  text-align: center;
   padding-bottom: 65px;
+  text-align: center;
 }
 
 .slider-social-item{
@@ -223,21 +244,24 @@ header{
   transform: translate(0, -50%);
 }
 .slider-button {
+  margin: 15px auto;
+
   width: 8px;
   height: 8px;
   border: 1px solid #fff;
   border-radius: 50%;
   opacity: .3;
-  margin: 15px auto;
 }
 .slider-button:active{
-  background-color: #fff;
   border: 1px solid transparent;
+
+  background-color: #fff;
   opacity: 1;
 }
 .slider-button:hover{
-  background-color: #fff;
   border: 1px solid transparent;
+
+  background-color: #fff;
   opacity: 1;
   cursor: pointer;
 }
@@ -252,39 +276,44 @@ header{
 
 /*--- style services block ---*/
 .services-blocks {
-  text-align: center;
   padding-bottom: 75px;
   vertical-align: top;
+
+  text-align: center;
 }
 .services-block {
+  margin-right: 43px;
+
   width: 240px;
   text-align: center;
-  margin-right: 43px;
 }
 .services-block:last-child{
   margin-right:0;
 }
 
 .services-block img{
+  margin-bottom: 20px;
+
   width: 88px;
   height: 88px;
-  margin-bottom: 20px;
 }
 .services-block h3{
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 133%;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+  margin-left: auto;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
 }
 .services-block p{
+  width: 240px;
+
   text-align: center;
+  font-weight: 200;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 200;
-  width: 240px;
 }
 
 
@@ -300,26 +329,29 @@ header{
   margin-bottom: 0;
 }
 .slider-photos {
-  width: 25%;
-  float: left;
   position: relative;
+  float: left;
+
+  width: 25%;
 }
 .our_works-photo{
-  width: 100%;
   display: block;
+
+  width: 100%;
 }
 .slider-content{
-  display: inline-block;
   position: absolute;
   top:0;
   right: 0;
   bottom: 0;
   left: 0;
+
+  display: inline-block;
+  margin: auto;
+  padding-top: 35%;
   background-color: rgba(87, 170, 104, 0.8);
   text-align: center;
-  padding-top: 35%;
   opacity: 0;
-  margin: auto;
 }
 .slider-photos:hover .slider-content{
   opacity: 1;
@@ -333,20 +365,22 @@ header{
   width: 42px;
   height: 42px;
   background-image: url("../img/slider-pict/skatit.svg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .our_works-slider-name{
-  font-size: 18px;
-  text-align: center;
   margin-bottom: 8px;
-  font-weight: 400;
   width: 100%;
+  text-align: center;
+  font-weight: 400;
+
+  font-size: 18px;
 }
 .our_works-slider-section{
-  font-size: 14px;
-  font-weight: 300;
   text-align: center;
+  font-weight: 300;
+
+  font-size: 14px;
 }
 
 /*======= style CENRADIS - prices
@@ -357,86 +391,92 @@ header{
   background-position:right bottom;
 }
 .prices-title {
+  margin: 10px auto;
   width: 300px;
   height: 50px;
-  margin: 10px auto;
 }
 
-/*.prices-tabs-items-container {
-margin: 33px auto 40px;
-text-align: center;
-}*/
+
 
 /* --- price table --- */
 
 .prices-table {
-  background-color: #2a5759;
   width: 100%;
+
+  background-color: #2a5759;
 }
 
 table{
+  position: relative; /* позиционирование для всей таблицы */
   width:100%;
-  color:#fff;
-  text-align: center;
   border: none;
   border-collapse: collapse;
-  position: relative; /* позиционирование для всей таблицы */
+  color:#fff;
+  text-align: center;
 }
+
 tr{
   vertical-align: middle;
 }
+
 td{
-  border: none;
-  border-bottom: 1px solid rgba(67, 124, 126, .5);
   padding: 17px 0;
   width:25%;
+  border: none;
+  border-bottom: 1px solid rgba(67, 124, 126, .5);
+  color: #a2d5d7;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  color: #a2d5d7;
 }
 thead td{
-  /* padding: 27px 0; */
-  font-weight: 400;
-  font-size: 20px;
+  padding: 40px 0 30px;
+  border-bottom: 1px solid rgba(67, 124, 126, 1);
   color: #fff;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(67, 124, 126, 1);
-  padding: 40px 0 30px;
+
+  font-weight: 400;
+  font-size: 20px;
 }
 .row-price>td {
+  padding: 25px 0;
+
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   font-size: 32px;
   line-height: 20px;
-  padding: 25px 0;
 }
 
 .row-buttom>td {
-  border-bottom: none;
   padding: 40px 0 80px;
+
+  border-bottom: none;
 }
 .price-button{
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
   padding: 13px 38px;
   border: 1px solid #fff;
   border-radius: 4px;
   color:#fff;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  font-size: 16px;
 }
 .col1:hover .price-button{
-  background-color: #478587;
   border: 1px solid #71b2b4;
+
+  background-color: #478587;
 }
 .price-button:hover{
-  background-color: #478587;
   border: 1px solid #71b2b4;
+
+  background-color: #478587;
 }
 .price-button:active{
-  background-color: rgba(71,133,135, .2);
   border: 1px solid transparent;
+
+  background-color: rgba(71,133,135, .2);
 }
 
 
@@ -463,8 +503,9 @@ thead td{
 }
 
 .komanda p {
-  max-width: 950px;
   margin: 0 auto;
+
+  max-width: 950px;
 }
 
 
@@ -481,9 +522,10 @@ thead td{
   margin-right: 0;
 }
 .member{
-  font-weight: 400;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
+
+  font-weight: 400;
 }
 .member-photo-container{
   position: relative;
@@ -493,8 +535,9 @@ thead td{
 .member-photo-4{
 }
 .member-name{
-  font-size: 18px;
   margin-bottom: 8px;
+
+  font-size: 18px;
 }
 .member-position{
   font-size: 13px;
@@ -507,35 +550,37 @@ thead td{
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(87, 170, 104, 0.8);
+  visibility: hidden;
   padding: 25px;
   padding-bottom: 20px;
-  visibility: hidden;
+  background-color: rgba(87, 170, 104, 0.8);
 }
 .slider-photo:hover .member-about{
   visibility: visible;
 }
 
 .member-about-title {
+  margin-bottom: 10px;
+
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 10px;
 }
 .member-about-text{
+  margin-bottom: 50px;
+  font-weight: 300;
+
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
-  margin-bottom: 50px;
 }
 
 .member-social-icon {
   display: inline-block;
+  margin-right: 5px;
   width: 40px;
   height: 40px;
-  margin-right: 5px;
   background-color: rgba(0, 0, 0, 0.3);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .member-social-icon-tw{
   background-image: url(../img/twitter.svg);
@@ -566,45 +611,51 @@ thead td{
 
 /* ----- form style ----- */
 .communicate-form {
-  width: 630px;
   margin: 0 auto;
+
+  width: 630px;
 }
 .communicate-form input, .communicate-form textarea{
+  margin-bottom: 10px;
+  padding: 14px 0 14px 15px;
+
   width: 100%;
   border-radius: 4px;
   background-color: rgba(46, 45, 107, 0.7);
   color: #fff;
-  padding: 14px 0 14px 15px;
   font-size: 13px;
-  margin-bottom: 10px;
 }
 .communicate-form input{
   height: 40px;
 }
 .communicate-form textarea{
+  overflow: auto;
+
   height: 230px;
   color:rgba(255, 255, 255, 0.7) !important;
   resize: none;
-  overflow: auto;
 }
 
 /* кнопка формы */
 input[type="submit"]{
+  padding: 0;
+  border: 1px solid #fff;
+  background: transparent;
+
   text-transform: uppercase;
   font-size: 16px;
   line-height: 40px;
-  border: 1px solid #fff;
-  background: transparent;
   cursor: pointer;
-  padding: 0;
 }
 input[type="submit"]:hover{
-  background-color: rgba(46,45,107,.6);
   border: 1px solid rgb(113,112,196);
+
+  background-color: rgba(46,45,107,.6);
 }
 input[type="submit"]:active{
-  background-color: rgba(46,45,107,.6);
   border: 1px solid transparent;
+
+  background-color: rgba(46,45,107,.6);
 }
 
 
@@ -616,8 +667,9 @@ input::placeholder{
 
 
 input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
-  border: 2px solid rgba(255, 246, 196, .7);
   padding-left: 13px;
+
+  border: 2px solid rgba(255, 246, 196, .7);
 }
 textarea:hover{padding-top: 12px;}
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
@@ -639,32 +691,33 @@ label.input-name{
 }
 .input-title {
   position: relative;
-  color:#fe0000;
-  font-size: 13px;
+  padding-top: 12px;
   width: 150px;
   height: 38px;
+  border-radius: 5px;
   background-color: #fff6c4;
+  color:#fe0000;
+  vertical-align: middle;
   text-align: center;
   font-weight: 400;
-  vertical-align: middle;
-  padding-top: 12px;
-  border-radius: 5px;
+  font-size: 13px;
 }
 .input-title::before{
   position: absolute;
-  content: '';
+  top:14px;
+  left:-11px;
   width: 0;
   height: 0;
   border:6px solid transparent;
   border-right: 6px solid #fff6c4;
-  left:-11px;
-  top:14px;
+  content: '';
 }
 
 .communicate-address {
-  font-size: 18px;
   margin: 45px auto 75px;
   text-align: center;
+
+  font-size: 18px;
 }
 
 /*=======   style KARTE map */
@@ -689,9 +742,9 @@ footer {
 }
 .copyright {
   padding-top: 30px;
+  vertical-align: middle;
   font-size: 13px;
   opacity: .5;
-  vertical-align: middle;
 }
 
 /*======================================
@@ -699,8 +752,9 @@ footer {
 =======================================*/
 
 .g00 {
-  background-color: lightgray;
   border: 4px solid coral;
+
+  background-color: lightgray;
 }
 
 .gl0, .gl1, .gl2, .gl3, .gl4, .gl5, .gl6, .gl7, .gl8 {
@@ -709,46 +763,46 @@ footer {
 
 .gl0 {
   border: 1px solid rgba(255, 127, 80, .1);
-  box-shadow: inset 0 0 0 2px coral;
   background: rgba(255, 127, 80, .1);
+  box-shadow: inset 0 0 0 2px coral;
 }
 
 .gl1 {
   border: 1px solid rgba(87, 183, 85, .1);
-  box-shadow: 0 0 0 2px green;
   background: rgba(87, 183, 85, .1);
+  box-shadow: 0 0 0 2px green;
 }
 
 .gl2 {
   border: 1px solid rgba(255, 45, 82, .1);
-  box-shadow: 0 0 0 2px rgb(255, 45, 82);
   background: rgba(255, 45, 82, .1);
+  box-shadow: 0 0 0 2px rgb(255, 45, 82);
 }
 
 .gl3 {
   border: 1px solid rgba(43, 46, 144, .1);
-  box-shadow: 0 0 0 2px rgb(220, 136, 221);
   background: rgba(43, 46, 144, .2);
+  box-shadow: 0 0 0 2px rgb(220, 136, 221);
 }
 
 .gl4 {
   border: 1px solid rgba(94, 46, 144, .1);
-  box-shadow: 0 0 0 2px rgb(94, 46, 144);
   background: rgba(94, 46, 144, .2);
+  box-shadow: 0 0 0 2px rgb(94, 46, 144);
 }
 
 .gl5 {
   border: 1px solid rgba(28, 219, 227, .1);
-  box-shadow: 0 0 0 2px rgb(28, 219, 227);
   background: rgba(28, 219, 227, .2);
+  box-shadow: 0 0 0 2px rgb(28, 219, 227);
 }
 .gl6 {
   border: 1px solid rgba(144, 94, 46, .1);
-  box-shadow: 0 0 0 2px rgba(144, 94, 46, 0.6);
   background: rgba(144, 94, 46, .2);
+  box-shadow: 0 0 0 2px rgba(144, 94, 46, 0.6);
 }
 .gl7 {
   border: 1px solid rgba(144, 143, 46, .1);
-  box-shadow: 0 0 0 2px rgba(144, 143, 46, 0.6);
   background: rgba(144, 143, 46, .2);
+  box-shadow: 0 0 0 2px rgba(144, 143, 46, 0.6);
 }
